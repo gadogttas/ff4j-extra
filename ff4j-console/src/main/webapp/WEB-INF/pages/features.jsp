@@ -54,7 +54,7 @@ $(document).ready(function() {
 		 	<c:out value="${permstatus.first ? '' : ','}${perm}"></c:out>
 		 </c:forEach>
 		</td>
-		<td><c:out value="${feat.flippingStrategy}">--</c:out></td>
+		<td style="word-break: break-all"><c:out value="${feat.flippingStrategy}">--</c:out></td>
 		<td style="width:8%;text-align:center">
 			<label class="switch switch-green">
 			 <c:choose>
@@ -76,7 +76,7 @@ $(document).ready(function() {
 				data-group="${feat.group}" 
 				data-strategy="${feat.flippingStrategy.class.name}" 
 				data-stratparams="${feat.flippingStrategy.initParams}" 
-				data-permissions="${feat.permissions}" 
+				data-permissions="${fn:length(feat.permissions) > 0 ? feat.permissions : ''}"
 				style="width:6px;" class="open-EditFlipDialog btn">
 			<i class="icon-pencil" style="margin-left:-5px;"></i>
 		</a>

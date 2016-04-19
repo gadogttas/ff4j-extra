@@ -37,7 +37,7 @@
         <div class="controls">
           <div class="btn-group">
             <input type="text" name="groupName" id="groupName" style="width:250px;height:30px;" />
-            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:right;margin-right:79px">
+            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:none">
               <span class="caret"></span>
               <span class="sr-only"><i class="icon-inbox icon-white" ></i></span>
             </button>
@@ -46,7 +46,7 @@
  					<li><a href="javascript:$('#modalEdit #groupName').val('${group}');">${group}</a></li>
  				</c:forEach>
               <li class="divider"></li>
-              <li><a href="javascript:$('#groupName').val('');">None</a></li>
+              <li><a href="javascript:$('#modalEdit #groupName').val('');">None</a></li>
             </ul>
           </div> <!-- btn-group -->     
         </div> <!-- controls -->
@@ -58,7 +58,7 @@
       <div class="controls">
         <div class="btn-group">
             <input type="text" name="strategy" id="strategy" style="width:250px;height:30px;font-style:normal" >
-            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:right;margin-right:79px">
+            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:none">
               <span class="caret"></span>
               <span class="sr-only"><i class="icon-cog icon-white" ></i></span>
             </button>
@@ -106,7 +106,7 @@
         <div class="btn-group">
             <input type="text" name="permission" id="permission" 
             	style="width:250px;height:30px;font-style:normal" value="Public" readonly="readonly">
-            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:right;margin-right:79px">
+            <button type="button" class="btn btn-green dropdown-toggle" data-toggle="dropdown" style="float:none">
               <span class="caret"></span>
               <span class="sr-only"><i class="icon-user icon-white" ></i></span>
             </button>
