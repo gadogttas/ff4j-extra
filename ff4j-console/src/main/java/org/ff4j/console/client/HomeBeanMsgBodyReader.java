@@ -136,7 +136,7 @@ public class HomeBeanMsgBodyReader implements MessageBodyReader<HomeBean> {
                     hb.setNbGroup((Integer) featMap.get("numberOfGroups"));
                 }
                 
-                if (featMap.containsKey("cache")) {
+                if (featMap.containsKey("cache") && featMap.get("cache") != null) {
                     Map<String, Object> cacheMap = (Map<String, Object>) featMap.get("cache");
                     String classStore= (String) cacheMap.get("cacheStore");
                     hb.setStore(classStore.substring(classStore.lastIndexOf(".") + 1) + " (+ CacheProxy)");
